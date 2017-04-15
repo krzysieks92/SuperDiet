@@ -92,3 +92,18 @@ $(document).ready(function() {
 	});
  
 });
+
+$(document).ready(function(){
+	$('.welcome').on('click', function(event){
+		
+		var target = $('#cd-placeholder-1');
+		
+		if( target.length ){
+			event.preventDefault();
+			$('html, body').animate({
+				scrollTop:target.offset().top
+			},1000);
+		}
+	});
+});
+

@@ -1,4 +1,4 @@
-body{font-size:100%;font-family:"Open Sans", sans-serif;color:#030d18;background-color:#f0eee1;margin:0;padding:0;background:url('../img/first.jpg') no-repeat center center;/*background-size:cover;*/background-attachment:fixed;}
+body{font-size:100%;font-family:"Open Sans", sans-serif;color:#030d18;background-color:#f0eee1;margin:0;padding:0;background:url('../img/first.jpg') no-repeat center center;background-size:cover;background-attachment:fixed;}
 a{color:#f5484a;text-decoration:none !important;}
 img{max-width:100%;}
 .cd-container{width:90%;margin:0 auto;}
@@ -121,8 +121,10 @@ table{color:black;text-align:center;}
 }
 @media (max-width:991px){.diet-one{margin-left:33.33333%;}
 }
-@media (max-width:767px){#cd-logo{display:none;}
+@media (max-width:767px){body{background:#ef9013;}
+#cd-logo{display:none;}
 .diet-one{margin-left:0;}
+  
 }
 @media (max-width:450px){.ih-item.square{height:120%;}
 }

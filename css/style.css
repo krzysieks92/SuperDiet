@@ -603,34 +603,6 @@ ustawienia sekcji
   }
 }
 
-@media (max-width: 1169px) {
-.cd-section h2 {
-    font-size: 3.25rem;
-  }
-  
-  .cd-section p {
-    font-size: 1.25rem;
-	color: black;
-	margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 767px) {
-.cd-section h2 {
-    font-size: 2.25rem;
-  }
-  
-  .cd-section p {
-    font-size: 1rem;
-	color: black;
-	margin-bottom: 20px;
-  }
-  
-  #cd-intro{
-	  height: 100vh;
-  }
-}
-
 /*zielona ramka*/
 .frame{
 	border: 4px solid green;
@@ -750,6 +722,18 @@ table{
 	}
 }
 
+@media (max-width: 1169px) {
+.cd-section h2 {
+    font-size: 3.25rem;
+  }
+  
+  .cd-section p {
+    font-size: 1.25rem;
+	color: black;
+	margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 991px){
 	.diet-one{
 		margin-left: 33.33333%;
@@ -757,12 +741,28 @@ table{
 }
 
 @media (max-width: 767px){
+	body{
+	background: #ef9013;	
+	}
 	#cd-logo{
 	  display: none;
   }
   .diet-one{
-		margin-left: 0;
+	margin-left: 0;
 	} 
+.cd-section h2 {
+    font-size: 2.25rem;
+  }
+  
+  .cd-section p {
+    font-size: 1rem;
+	color: black;
+	margin-bottom: 20px;
+  }
+  
+  #cd-intro{
+	  height: 100vh;
+  }
 }
 
 @media (max-width: 450px){

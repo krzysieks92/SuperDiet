@@ -1,33 +1,33 @@
 jQuery(document).ready(function($){
-	var secondaryNav = $('.cd-secondary-nav'),
+	var secondaryNav = $('.secondary-nav'),
 		secondaryNavTopPosition = secondaryNav.offset().top,
-		taglineOffesetTop = $('#cd-intro-tagline').offset().top + $('#cd-intro-tagline').height() + parseInt($('#cd-intro-tagline').css('paddingTop').replace('px', '')),
-		contentSections = $('.cd-section');
+		taglineOffesetTop = $('.intro-tagline').offset().top + $('.intro-tagline').height() + parseInt($('.intro-tagline').css('paddingTop').replace('px', '')),
+		contentSections = $('.section');
 	
 	$(window).on('scroll', function(){
 		//on desktop - assign a position fixed to logo and action button and move them outside the viewport
-		( $(window).scrollTop() > taglineOffesetTop ) ? $('#cd-logo, .cd-btn, .social').addClass('is-hidden') : $('#cd-logo, .cd-btn, .social').removeClass('is-hidden');
+		( $(window).scrollTop() > taglineOffesetTop ) ? $('.logo, .cd-btn, .social').addClass('is-hidden') : $('.logo, .cd-btn, .social').removeClass('is-hidden');
 		
 		//on desktop - fix secondary navigation on scrolling
 		if($(window).scrollTop() > secondaryNavTopPosition ) {
 			//fix secondary navigation
 			secondaryNav.addClass('is-fixed');
 			//push the .cd-main-content giving it a top-margin
-			$('.cd-main-content').addClass('has-top-margin');	
+			$('.main-content').addClass('has-top-margin');	
 			//on Firefox CSS transition/animation fails when parent element changes position attribute
 			//so we to change secondary navigation childrens attributes after having changed its position value
 			setTimeout(function() {
 	            secondaryNav.addClass('animate-children');
-	            $('#cd-logo').addClass('slide-in');
+	            $('.logo').addClass('slide-in');
 				$('.cd-btn').addClass('slide-in');
 				$('.social').addClass('slide-in');
 	        }, 50);
 		} else {
 			secondaryNav.removeClass('is-fixed');
-			$('.cd-main-content').removeClass('has-top-margin');
+			$('.main-content').removeClass('has-top-margin');
 			setTimeout(function() {
 	            secondaryNav.removeClass('animate-children');
-	            $('#cd-logo').removeClass('slide-in');
+	            $('.logo').removeClass('slide-in');
 				$('.cd-btn').removeClass('slide-in');
 				$('.social').removeClass('slide-in');
 	        }, 50);
@@ -50,8 +50,8 @@ jQuery(document).ready(function($){
 		});
 	}
 
-	//on mobile - open/close secondary navigation clicking/tapping the .cd-secondary-nav-trigger
-	$('.cd-secondary-nav-trigger').on('click', function(event){
+	//on mobile - open/close secondary navigation clicking/tapping the .secondary-nav-trigger
+	$('.secondary-nav-trigger').on('click', function(event){
 		event.preventDefault();
 		$(this).toggleClass('menu-is-open');
 		secondaryNav.find('ul').toggleClass('is-visible');
@@ -66,20 +66,20 @@ jQuery(document).ready(function($){
         	}, 400
         ); 
         //on mobile - close secondary navigation
-        $('.cd-secondary-nav-trigger').removeClass('menu-is-open');
+        $('.secondary-nav-trigger').removeClass('menu-is-open');
         secondaryNav.find('ul').removeClass('is-visible');
     });
 
     //on mobile - open/close primary navigation clicking/tapping the menu icon
-	/*$('.cd-primary-nav').on('click', function(event){
-		if($(event.target).is('.cd-primary-nav')) $(this).children('.social').children('ul').toggleClass('is-visible');
+	/*$('.primary-nav').on('click', function(event){
+		if($(event.target).is('.primary-nav')) $(this).children('.social').children('ul').toggleClass('is-visible');
 	});*/
 });
 
 /*płynne przewijanie strony*/
 $(document).ready(function() { 
  
-	$('a[href^="#"]').on('click', function(event) {
+	$('a[href^="."]').on('click', function(event) {
 	
 		var target = $( $(this).attr('href') );
 	
@@ -96,7 +96,7 @@ $(document).ready(function() {
 $(document).ready(function(){
 	$('.welcome').on('click', function(event){
 		
-		var target = $('#cd-placeholder-1');
+		var target = $('.section1');
 		
 		if( target.length ){
 			event.preventDefault();

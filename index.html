@@ -16,8 +16,8 @@
 
 <body>
 	<header class="cd-header">
-		<div id="cd-logo"><a href="#cd-intro"><img src="img/superdiet-mini.png" alt="Logo" style="height: 50px; width: 50px;"></a></div>
-		<nav class="cd-primary-nav">
+		<div class="logo"><a href=".intro"><img src="img/superdiet-mini.png" alt="Logo" style="height: 50px; width: 50px;"></a></div>
+		<nav class="primary-nav">
 		<div  class="social">
 			<ul class="upNav">
 				<li> <a href="#0"><img src="icons/facebook.svg" alt="facebook" style="height: 50px; width: 50px;"></a></li>
@@ -27,45 +27,44 @@
 			</div>
 		</nav> 
 	</header>
-	<section id="cd-intro">
-		<div id="cd-intro-tagline">
+	<section class="intro">
+		<div class="intro-tagline">
 			<img src="img/superdiet.png" alt="Logo" >
-					<form style="display: inline" action="#cd-placeholder-1" method="get"><button class="welcome">Poznaj nas</button>
+					<form style="display: inline" action=".section1" method="get"><button class="welcome">Poznaj nas</button>
 					</form>
-			<!--<a href="#cd-placeholder-1"><button class="welcome">Poznaj nas</button></a>-->
 		</div> 
 	</section> 
 
-	<div class="cd-secondary-nav">
-		<a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a> 
+	<div class="secondary-nav">
+		<a href="#0" class="secondary-nav-trigger">Menu<span></span></a> 
 		<nav>
 			<ul>
 				<li>
-					<a href="#cd-placeholder-1">
+					<a href=".section1">
 						<b>O nas</b>
 						<span></span>
 					</a>
 				</li>
 				<li>
-					<a href="#cd-placeholder-2">
+					<a href=".section2">
 						<p><b>Diety</b></p>
 						<span></span>
 					</a>
 				</li>
 				<li>
-					<a href="#cd-placeholder-3">
+					<a href=".section3">
 						<b>Cennik</b>
 						<span></span>
 					</a>
 				</li>
 				<li>
-					<a href="#cd-placeholder-4">
+					<a href=".section4">
 						<b>Dostawa</b>
 						<span></span>
 					</a>
 				</li>
 				<li>
-					<a href="#cd-placeholder-5">
+					<a href=".section5">
 						<b>Kontakt</b>
 						<span></span>
 					</a>
@@ -73,8 +72,9 @@
 			</ul>
 		</nav>
 	</div> 
-	<main class="cd-main-content">
-		<section id="cd-placeholder-1" class="cd-section cd-container">
+	<main class="main-content">
+		<section class="section section1">
+			<div class="cd-container">
 			<div class="frame">
 				<h2>O nas</h2>
 				<p>
@@ -115,10 +115,12 @@
 						</div>
 					</div>	
 				</div>	
-			</div>	
+			</div>
+			</div>
 		</section>
 
-		<section id="cd-placeholder-2" class="cd-section cd-container">	
+		<section class="section section2">	
+			<div class="cd-container">
 			<div class="container width-property">
 				<div class="row width-property">
 					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 frame dietKind diet-one"><h2>Dieta Paleo</h2><img src="img/paleo.jpg" class="img-circle" alt="paleo"></div>
@@ -126,9 +128,11 @@
 					<div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-12 frame dietKind"><h2>Dieta Wegetariańska</h2><img src="img/vege.jpg" class="img-circle" alt="vege"></div>
 				</div>
 			</div>
+			</div>	
 		</section>
 
-		<section id="cd-placeholder-3" class="cd-section cd-container">	
+		<section class="section section3">
+			<div class="cd-container">
 			<div class="frame">
 				<h2>Cennik</h2>
 				<div class="table-responsive">
@@ -294,17 +298,21 @@
 					</table>
 				</div>
 			</div>
+			</div>	
 		</section> 
 
-		<section id="cd-placeholder-4" class="cd-section cd-container">
+		<section class="section section4">
+			<div class="cd-container">
 			<div class="frame">
 				<h2>Dostawa</h2>
 				<img src="img/warszawa.png" alt="mapa">
 				<p>Bezpłatna dostawa na terenie całej Warszawy. W celu dostawy do okolicznych miejscowości prosimy o kontakt.</p>
 			</div>
+			</div>	
 		</section> 
 
-		<section id="cd-placeholder-5" class="cd-section cd-container">
+		<section class="section section5">
+			<div class="cd-container">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 frame">
 				<h2>Kontakt</h2>
 				<form>
@@ -324,6 +332,7 @@
 					<a href="#0"><img src="icons/instagram.svg" style="height: 50px; width: 50px;" alt="instagram"></a>
 				</div>
 			</div>
+			</div>	
 		</section> 
 	</main> 
 	

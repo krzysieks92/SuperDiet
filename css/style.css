@@ -82,24 +82,24 @@ nawigacja
   z-index: 3;
 }
 
-#cd-logo {
+.logo {
   float: left;
   margin: 6px 0 0 5%;
 }
 
-#cd-logo img {
+.logo img {
   display: block;
   width: 200px;
 }
 
 @media only screen and (min-width: 768px) {
-  #cd-logo {
+  .logo {
     margin: 6px 0 0 5%;
   }
 }
 
 @media only screen and (min-width: 1170px) {
-  #cd-logo.is-hidden {
+  .logo.is-hidden {
     /* ukrywanie logo */
     opacity: 0;
     position: fixed;
@@ -110,7 +110,7 @@ nawigacja
     transition: left 0.3s, opacity 0.3s;
   }
   
-  #cd-logo.is-hidden.slide-in {
+  .logo.is-hidden.slide-in {
     /* pojawienie sie logo po znikncieciu secondary nav */
     left: 5%;
     opacity: 1;
@@ -134,7 +134,7 @@ nawigacja
   }
 }
 
-.cd-primary-nav {
+.primary-nav {
   float: right;
   margin-right: 5%;
   width: 44px;
@@ -142,7 +142,7 @@ nawigacja
   background-size: 44px 44px;
 }
 
-.cd-primary-nav ul {
+.primary-nav ul {
   position: absolute;
   top: 0;
   left: 0;
@@ -154,7 +154,7 @@ nawigacja
   transform: translateY(-100%);
 }
 
-.cd-primary-nav ul.is-visible {
+.primary-nav ul.is-visible {
   -webkit-transform: translateY(50px);
   -moz-transform: translateY(50px);
   -ms-transform: translateY(50px);
@@ -162,7 +162,7 @@ nawigacja
   transform: translateY(50px);
 }
 
-.cd-primary-nav a {
+.primary-nav a {
   display: block;
   height: 50px;
   line-height: 50px;
@@ -173,13 +173,13 @@ nawigacja
 }
 
 @media only screen and (min-width: 768px) {
-  .cd-primary-nav {
+  .primary-nav {
     width: auto;
     height: auto;
     background: none;
   }
   
-  .cd-primary-nav ul {
+  .primary-nav ul {
     position: static;
     width: auto;
     -webkit-transform: translateY(0);
@@ -190,7 +190,7 @@ nawigacja
     line-height: 70px;
   }
   
-  .cd-primary-nav ul.is-visible {
+  .primary-nav ul.is-visible {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -198,12 +198,12 @@ nawigacja
     transform: translateY(0);
   }
   
-  .cd-primary-nav li {
+  .primary-nav li {
     display: inline-block;
     margin-left: 1em;
   }
   
-  .cd-primary-nav a {
+  .primary-nav a {
     display: inline-block;
     height: auto;
     line-height: normal;
@@ -214,7 +214,7 @@ nawigacja
   }
 }
 
-#cd-intro {
+.intro {
   position: relative;
   background: url('../img/intro.jpg') no-repeat center center;
   background-size: cover;
@@ -223,7 +223,7 @@ nawigacja
   min-height: 600px;
 }
 
-#cd-intro #cd-intro-tagline {
+.intro .intro-tagline {
   width: 90%;
   max-width: 1170px;
   margin: 0 auto;
@@ -232,21 +232,21 @@ nawigacja
 }
 
 @media only screen and (min-width: 768px) {
-  #cd-intro {
+  .intro {
     height: 100vh;
   }
   
-  #cd-intro #cd-intro-tagline {
+  .intro .intro-tagline {
     padding-top: 120px;
   }
 }
 
 @media only screen and (min-width: 1170px) {
-  #cd-intro {
+  .intro {
     height: 100vh;
   }
   
-  #cd-intro #cd-intro-tagline {
+  .intro .intro-tagline {
     padding-top: 120px;
   }
 }
@@ -283,14 +283,14 @@ nawigacja
 secondary nav
 
 -------------------------------- */
-.cd-secondary-nav {
+.secondary-nav {
   position: relative;
   z-index: 3;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.cd-secondary-nav ul {
+.secondary-nav ul {
   position: fixed;
   width: 90%;
   max-width: 400px;
@@ -317,7 +317,7 @@ secondary nav
   transition: transform 0.3s, visibility 0s 0.3s;
 }
 
-.cd-secondary-nav ul.is-visible {
+.secondary-nav ul.is-visible {
   visibility: visible;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -329,19 +329,19 @@ secondary nav
   transition: transform 0.3s, visibility 0s 0s;
 }
 
-.cd-secondary-nav li a {
+.secondary-nav li a {
   display: block;
   padding: 1.6em;
   border-bottom: 1px solid #092645;
   color: #f0eee1;
 }
 
-.cd-secondary-nav li:last-child a {
+.secondary-nav li:last-child a {
   border-bottom: none;
 }
 
 @media only screen and (min-width: 1170px) {
-  .cd-secondary-nav {
+  .secondary-nav {
     z-index: 1;
     height: 100px;
     background-color: rgba(3, 13, 24, 0.96);
@@ -350,11 +350,11 @@ secondary nav
     transition: height 0.3s;
   }
   
-  .cd-secondary-nav nav, .cd-secondary-nav ul, .cd-secondary-nav li, .cd-secondary-nav a {
+  .secondary-nav nav, .secondary-nav ul, .secondary-nav li, .secondary-nav a {
     height: 100%;
   }
   
-  .cd-secondary-nav ul {
+  .secondary-nav ul {
     position: static;
     width: auto;
     max-width: 100%;
@@ -368,12 +368,12 @@ secondary nav
     background-color: transparent;
   }
   
-  .cd-secondary-nav li {
+  .secondary-nav li {
     display: inline-block;
     margin-left: -4px;
   }
   
-  .cd-secondary-nav li a {
+  .secondary-nav li a {
     position: relative;
     text-align: center;
     display: block;
@@ -384,7 +384,7 @@ secondary nav
     transition: padding 0.2s;
   }
   
-  .cd-secondary-nav li a b {
+  .secondary-nav li a b {
     text-transform: uppercase;
     font-size: 13px;
     font-size: 0.8125rem;
@@ -392,7 +392,7 @@ secondary nav
     color: rgba(240, 238, 225, 0.3);
   }
   
-  .cd-secondary-nav li a span {
+  .secondary-nav li a span {
     position: absolute;
     display: inline-block;
     width: 40px;
@@ -412,31 +412,31 @@ secondary nav
     transition: opacity 0.2s;
   }
   
-  .cd-secondary-nav li a:hover b, .cd-secondary-nav li a.active b {
+  .secondary-nav li a:hover b, .secondary-nav li a.active b {
     color: #f0eee1;
   }
   
-  .cd-secondary-nav li:nth-child(1) a span {
+  .secondary-nav li:nth-child(1) a span {
     background-position: 0 0;
   }
   
-  .cd-secondary-nav li:nth-child(2) a span {
+  .secondary-nav li:nth-child(2) a span {
     background-position: -40px 0;
   }
   
-  .cd-secondary-nav li:nth-child(3) a span {
+  .secondary-nav li:nth-child(3) a span {
     background-position: -80px 0;
   }
   
-  .cd-secondary-nav li:nth-child(4) a span {
+  .secondary-nav li:nth-child(4) a span {
     background-position: -120px 0;
   }
   
-  .cd-secondary-nav li:nth-child(5) a span {
+  .secondary-nav li:nth-child(5) a span {
     background-position: -160px 0;
   }
   
-  .cd-secondary-nav.is-fixed {
+  .secondary-nav.is-fixed {
     /* on Firefox CSS transition/animation fails when parent element changes position attribute*/
     /* so we defined to diffent classes: .is-fixed to change the position value and .is-animated to change childrens' attributes (padding and opacity)*/
     position: fixed;
@@ -446,22 +446,22 @@ secondary nav
     width: 100%;
   }
   
-  .cd-secondary-nav.animate-children {
+  .secondary-nav.animate-children {
     /* on Firefox CSS transition/animation fails when parent element changes position attribute*/
     /* so we defined to diffent classes: .is-fixed to change the position value and .is-animated to change childrens' attributes (padding and opacity)*/
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   }
   
-  .cd-secondary-nav.animate-children li a {
+  .secondary-nav.animate-children li a {
     padding: 26px 30px 0 30px;
   }
   
-  .cd-secondary-nav.animate-children li a span {
+  .secondary-nav.animate-children li a span {
     opacity: 0;
   }
 }
 
-.cd-secondary-nav-trigger {
+.secondary-nav-trigger {
   position: fixed;
   bottom: 20px;
   right: 5%;
@@ -476,7 +476,7 @@ secondary nav
   z-index: 2;
 }
 
-.cd-secondary-nav-trigger span {
+.secondary-nav-trigger span {
   position: absolute;
   display: block;
   width: 4px;
@@ -497,7 +497,7 @@ secondary nav
   transition: background 0.3s;
 }
 
-.cd-secondary-nav-trigger span::before, .cd-secondary-nav-trigger span::after {
+.secondary-nav-trigger span::before, .secondary-nav-trigger span::after {
   content: '';
   position: absolute;
   background: inherit;
@@ -506,7 +506,7 @@ secondary nav
   border-radius: 50%;
 }
 
-.cd-secondary-nav-trigger span::before {
+.secondary-nav-trigger span::before {
   right: -10px;
   -webkit-transform: rotate(0);
   -moz-transform: rotate(0);
@@ -515,7 +515,7 @@ secondary nav
   transform: rotate(0);
 }
 
-.cd-secondary-nav-trigger span::after {
+.secondary-nav-trigger span::after {
   left: -10px;
   -webkit-transform: rotate(0);
   -moz-transform: rotate(0);
@@ -524,17 +524,17 @@ secondary nav
   transform: rotate(0);
 }
 
-.cd-secondary-nav-trigger.menu-is-open {
+.secondary-nav-trigger.menu-is-open {
   background: transparent;
 }
 
-.cd-secondary-nav-trigger.menu-is-open span {
+.secondary-nav-trigger.menu-is-open span {
   background: rgba(240, 238, 225, 0);
   width: 20px;
   height: 2px;
 }
 
-.cd-secondary-nav-trigger.menu-is-open span::before, .cd-secondary-nav-trigger.menu-is-open span::after {
+.secondary-nav-trigger.menu-is-open span::before, .secondary-nav-trigger.menu-is-open span::after {
   background: #f0eee1;
   width: 100%;
   height: 100%;
@@ -543,7 +543,7 @@ secondary nav
   left: 0;
 }
 
-.cd-secondary-nav-trigger.menu-is-open span::before {
+.secondary-nav-trigger.menu-is-open span::before {
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
@@ -551,7 +551,7 @@ secondary nav
   transform: rotate(135deg);
 }
 
-.cd-secondary-nav-trigger.menu-is-open span::after {
+.secondary-nav-trigger.menu-is-open span::after {
   -webkit-transform: rotate(225deg);
   -moz-transform: rotate(225deg);
   -ms-transform: rotate(225deg);
@@ -560,7 +560,7 @@ secondary nav
 }
 
 @media only screen and (min-width: 1170px) {
-  .cd-secondary-nav-trigger {
+  .secondary-nav-trigger {
     display: none;
   }
 }
@@ -569,34 +569,34 @@ secondary nav
 
 ustawienia sekcji
 -------------------------------- */
-.cd-section {
+.section {
   margin: 0 auto;
   padding: 2em 0;
 }
 
-.cd-section h2 {
+.section h2 {
   font-size: 3.25rem;
   margin-bottom: .6em;
   color: black;
 }
 
-.cd-section p {
+.section p {
   line-height: 1.6;
   font-size: 50px;
   margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 1170px) {
-  .cd-section {
+  .section {
     margin: 0 auto;
     padding: 4em 0;
   }
   
-  .cd-section h2 {
+  .section h2 {
     font-size: 3.25rem;
   }
   
-  .cd-section p {
+  .section p {
     font-size: 1.25rem;
 	color: black;
 	margin-bottom: 20px;
@@ -686,7 +686,7 @@ table{
 	background-color: #2bf256;
 }
 
-#cd-placeholder-2 h2{
+.section2 h2{
 	font-size: 1rem;
 }
 
@@ -723,7 +723,7 @@ table{
 }
 
 @media (max-width: 1169px) {
-.cd-section h2 {
+.section h2 {
     font-size: 3.25rem;
   }
   
@@ -744,28 +744,35 @@ table{
 	body{
 	background: #ef9013;	
 	}
-	#cd-logo{
+	.logo{
 	  display: none;
   }
   .diet-one{
 	margin-left: 0;
 	} 
-.cd-section h2 {
+.section h2 {
     font-size: 2.25rem;
   }
   
-  .cd-section p {
+  .section p {
     font-size: 1rem;
 	color: black;
 	margin-bottom: 20px;
   }
   
-  #cd-intro{
+  .intro{
 	  height: 100vh;
   }
 }
 
 @media (max-width: 450px){
+	.section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .cd-section p {
+    font-size: 0.8rem;
+  }
 	.ih-item.square{
 		height: 120%;
 	}

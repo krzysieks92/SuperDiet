@@ -2,12 +2,9 @@ body {
   font-size: 100%;
   font-family: "Open Sans", sans-serif;
   color: #030d18;
-  background-color: #f0eee1;
   margin:0;
   padding:0;
-  background: url('../img/first.jpg') no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color:orange;
 }
 
 a {
@@ -70,9 +67,7 @@ img {
   }
 }
 /* -------------------------------- 
-
 nawigacja
-
 -------------------------------- */
 .cd-header {
   position: absolute;
@@ -218,7 +213,6 @@ nawigacja
   position: relative;
   background: url('../img/intro.jpg') no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
   z-index: 2;
   min-height: 600px;
 }
@@ -279,9 +273,7 @@ nawigacja
 
 
 /* -------------------------------- 
-
 secondary nav
-
 -------------------------------- */
 .secondary-nav {
   position: relative;
@@ -566,7 +558,6 @@ secondary nav
 }
 
 /* -------------------------------- 
-
 ustawienia sekcji
 -------------------------------- */
 .section {
@@ -804,4 +795,3 @@ table{
 	  font-size: 0.5rem;
 	}
 }
-
